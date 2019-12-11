@@ -29,4 +29,8 @@ input {
   transform: scale(.97);
 }
 
+.error {
+  border: 2px solid red;
+}
+
 
