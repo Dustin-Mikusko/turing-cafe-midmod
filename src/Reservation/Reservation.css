@@ -1,0 +1,27 @@
+.resy-card {
+  width: 200px;
+  height: 250px;
+  background-color: white;
+  border: 5px solid teal;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.cancel-btn {
+  height: 40px;
+  width: 80%;
+  background-color: teal;
+  color: white;
+  margin-top: 10px;
+  font-size: 1.2em;
+  border-radius: 1px;
+}
+
+.cancel-btn:hover {
+  background-color: rgb(3, 104, 104);
+  cursor: pointer;
+}
+
+.cancel-btn:active {
+  transform: scale(.97);
+}
