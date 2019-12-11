@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reservation should redner correct info matching the snapshot 1`] = `
+<article
+  className="resy-card"
+>
+  <h2 />
+  <p />
+  <p />
+  <p>
+    Number of guests: 
+  </p>
+  <button
+    className="cancel-btn"
+    type="button"
+  >
+    Cancel
+  </button>
+</article>
+`;
