@@ -26,7 +26,14 @@ export const addReservation = newReservation => {
 }
 
 export const removeReservation = id => {
-  return fetch(`http://localhost:3001/api/v1/reservations/${id}`)
+  const options = {
+    method: 'DELETE',
+    body: JSON.stringify(id),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  }
+  return fetch(`http://localhost:3001/api/v1/reservations/${id}`, options)
     .then(res => {
       if (!res.ok) {
         throw ('Error deleting reservation')
