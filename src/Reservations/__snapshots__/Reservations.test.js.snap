@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reservations should render component with correct data to match snapshot 1`] = `
+<section
+  className="resys-container"
+>
+  <Reservation
+    date="7/13"
+    key="1"
+    name="Dustin"
+    number={4}
+    time="6:30"
+  />
+</section>
+`;
