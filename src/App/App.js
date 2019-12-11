@@ -27,6 +27,14 @@ class App extends Component {
       .catch(err => this.setState({ error: err.message }))
   }
 
+  deleteReservation = (e) => {
+    const id = e.target.id;
+    removeReservation(id)
+      .then(reservations => this.setState({ ...reservations }))
+  }
+ 
+  
+
   render() {
     return (
       <div className="App">
@@ -38,6 +46,7 @@ class App extends Component {
         </div>
         <div className='resy-container'>
           <Reservations 
+            deleteReservation={this.deleteReservation}
             reservations={this.state.reservations}
           />
         </div>
