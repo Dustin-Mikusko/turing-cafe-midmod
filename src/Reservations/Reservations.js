@@ -1,8 +1,9 @@
 import React from 'react';
 import './Reservations.css';
+import Reservation from '../Reservation/Reservation';
 
 const Reservations = ({ reservations }) => {
-  const reservations = reservations.map(resy => {
+  const resys = reservations.map(resy => {
     return <Reservation 
       key={resy.id}
       name={resy.name}
@@ -13,8 +14,8 @@ const Reservations = ({ reservations }) => {
   });
 
   return (
-    <section>
-      {reservations}
+    <section className="resys-container">
+      {resys}
     </section>
   )
 }
